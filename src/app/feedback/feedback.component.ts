@@ -77,4 +77,6 @@ export class FeedbackComponent {
   get termsAndConditions() {
     return this.fbForm.get('termsAndConditions');
   }
+
+
 }
