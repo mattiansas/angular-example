@@ -3,24 +3,23 @@ import { PagenotfoundComponent } from './pagenotfound.component';
 //import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('PagenotfoundComponent', () => {
-  let component: PagenotfoundComponent;
-  let fixture: ComponentFixture<PagenotfoundComponent>;
+    let component: PagenotfoundComponent;
+    let fixture: ComponentFixture<PagenotfoundComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [PagenotfoundComponent],
-      /*schemas: [
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [PagenotfoundComponent],
+            /*schemas: [
         CUSTOM_ELEMENTS_SCHEMA
       ],*/
-    })
-      .compileComponents();
+        }).compileComponents();
 
-    fixture = TestBed.createComponent(PagenotfoundComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+        fixture = TestBed.createComponent(PagenotfoundComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

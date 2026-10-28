@@ -1,20 +1,20 @@
 .toolbar-content {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .toolbar-icon {
-  margin-right: 8px; /* Lisää tilaa ikonin ja tekstin väliin */
-  font-size: 20px;   /* Voit säätää ikonin kokoa tarvittaessa */
+    margin-right: 8px; /* Lisää tilaa ikonin ja tekstin väliin */
+    font-size: 20px; /* Voit säätää ikonin kokoa tarvittaessa */
 }
 
 .toolbar-text {
-  font-size: 14px;   /* Pienempi fonttikoko tekstille */
+    font-size: 14px; /* Pienempi fonttikoko tekstille */
 }
 
 .container {
-  display: flex;
-  justify-content: center; /* keskittää vaakasuunnassa */
-  align-items: center;     /* keskittää pystysuunnassa */
-  height: 100vh;           /* koko näkymän korkeus */
+    display: flex;
+    justify-content: center; /* keskittää vaakasuunnassa */
+    align-items: center; /* keskittää pystysuunnassa */
+    height: 100vh; /* koko näkymän korkeus */
 }

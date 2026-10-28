@@ -7,5 +7,5 @@ export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'feedback', component: FeedbackComponent },
-    { path: '**', component: PagenotfoundComponent }
+    { path: '**', component: PagenotfoundComponent },
 ];

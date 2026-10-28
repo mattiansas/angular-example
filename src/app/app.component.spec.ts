@@ -3,32 +3,35 @@ import { AppComponent } from './app.component';
 //import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent],
-      /*schemas: [
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [AppComponent],
+            /*schemas: [
         CUSTOM_ELEMENTS_SCHEMA
       ]*/
-    }).compileComponents();
-  });
+        }).compileComponents();
+    });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+    it('should create the app', () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        const app = fixture.componentInstance;
+        expect(app).toBeTruthy();
+    });
 
-  it(`should have the 'angular-example' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-example');
-  });
+    it(`should have the 'angular-example' title`, () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        const app = fixture.componentInstance;
+        expect(app.title).toEqual('angular-example');
+    });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const toolbarText = "Ohjelmistokehitysprosessin automatisointi -opintojakson harjoitusprojekti"
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.mat-toolbar span span')?.textContent).toContain(toolbarText);
-  });
+    it('should render title', () => {
+        const fixture = TestBed.createComponent(AppComponent);
+        const toolbarText =
+            'Ohjelmistokehitysprosessin automatisointi -opintojakson harjoitusprojekti';
+        fixture.detectChanges();
+        const compiled = fixture.nativeElement as HTMLElement;
+        expect(compiled.querySelector('.mat-toolbar span span')?.textContent).toContain(
+            toolbarText
+        );
+    });
 });
